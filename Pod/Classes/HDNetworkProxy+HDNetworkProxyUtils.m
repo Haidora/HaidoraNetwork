@@ -54,9 +54,24 @@
             baseUrl = [[HDNetworkConfig sharedInstance] baseURL];
         }
     }
+    if (baseUrl.length <= 0)
+    {
+        baseUrl = [[HDNetworkConfig sharedInstance] baseURL];
+    }
     //可以处理结尾是否是"/"
     NSAssert(baseUrl != nil, @"请求地址为空");
-    return [NSString stringWithFormat:@"%@%@", baseUrl, detailUrl];
+    if ([baseUrl hasSuffix:@"/"])
+    {
+        baseUrl = [baseUrl stringByReplacingCharactersInRange:NSMakeRange(baseUrl.length - 1, 1)
+                                                   withString:@""];
+    }
+    if ([detailUrl hasPrefix:@"/"])
+    {
+        detailUrl =
+            [detailUrl stringByReplacingCharactersInRange:NSMakeRange(detailUrl.length - 1, 1)
+                                               withString:@""];
+    }
+    return [NSString stringWithFormat:@"%@/%@", baseUrl, detailUrl];
 }
 
 - (HDRequestMethod)loadRequestMethodWith:(id<HDNetworkRequest>)request
