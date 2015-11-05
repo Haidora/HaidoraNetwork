@@ -67,9 +67,7 @@
     }
     if ([detailUrl hasPrefix:@"/"])
     {
-        detailUrl =
-            [detailUrl stringByReplacingCharactersInRange:NSMakeRange(detailUrl.length - 1, 1)
-                                               withString:@""];
+        detailUrl = [detailUrl stringByReplacingCharactersInRange:NSMakeRange(0, 1) withString:@""];
     }
     return [NSString stringWithFormat:@"%@/%@", baseUrl, detailUrl];
 }
