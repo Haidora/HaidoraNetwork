@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37582F2DFEDECF55890667D1 /* libPods-HaidoraNetwork_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D35707A3A842EB6142F8C774 /* libPods-HaidoraNetwork_Tests.a */; };
-		446EC2F3F3F387D15CE3F449 /* libPods-HaidoraNetwork_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD669094E37FE9EBBDCF40CD /* libPods-HaidoraNetwork_Example.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -22,7 +20,9 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		7439927FA30FA9636AF3ACCF /* Pods_HaidoraNetwork_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C813F22316293619968AEEA4 /* Pods_HaidoraNetwork_Tests.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		C0A1E6F78CF54B5032EBABD0 /* Pods_HaidoraNetwork_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E834A6F7FFFE836FE63AFC7 /* Pods_HaidoraNetwork_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,10 +61,10 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8B4ED736C200324C1482BD2D /* Pods-HaidoraNetwork_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaidoraNetwork_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HaidoraNetwork_Tests/Pods-HaidoraNetwork_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		8E834A6F7FFFE836FE63AFC7 /* Pods_HaidoraNetwork_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HaidoraNetwork_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2F7BCE7E8195B87323F16F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		D35707A3A842EB6142F8C774 /* libPods-HaidoraNetwork_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HaidoraNetwork_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C813F22316293619968AEEA4 /* Pods_HaidoraNetwork_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HaidoraNetwork_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA862296963DFBCA9D912044 /* Pods-HaidoraNetwork_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaidoraNetwork_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HaidoraNetwork_Tests/Pods-HaidoraNetwork_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		DD669094E37FE9EBBDCF40CD /* libPods-HaidoraNetwork_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HaidoraNetwork_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				446EC2F3F3F387D15CE3F449 /* libPods-HaidoraNetwork_Example.a in Frameworks */,
+				C0A1E6F78CF54B5032EBABD0 /* Pods_HaidoraNetwork_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				37582F2DFEDECF55890667D1 /* libPods-HaidoraNetwork_Tests.a in Frameworks */,
+				7439927FA30FA9636AF3ACCF /* Pods_HaidoraNetwork_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,8 +132,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				DD669094E37FE9EBBDCF40CD /* libPods-HaidoraNetwork_Example.a */,
-				D35707A3A842EB6142F8C774 /* libPods-HaidoraNetwork_Tests.a */,
+				8E834A6F7FFFE836FE63AFC7 /* Pods_HaidoraNetwork_Example.framework */,
+				C813F22316293619968AEEA4 /* Pods_HaidoraNetwork_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

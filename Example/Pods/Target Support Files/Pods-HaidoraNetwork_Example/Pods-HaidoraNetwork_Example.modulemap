@@ -1,0 +1,6 @@
+framework module Pods_HaidoraNetwork_Example {
+  umbrella header "Pods-HaidoraNetwork_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

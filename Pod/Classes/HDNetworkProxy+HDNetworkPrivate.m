@@ -10,7 +10,7 @@
 #import "HDNetworkConfig.h"
 #import "HDNetworkProxy+HDNetworkProxyUtils.h"
 
-#import <AFNetworking.h>
+#import <AFNetworking/AFNetworking.h>
 #import <objc/runtime.h>
 
 static char *kHDNetworkProxy_manager = "kHDNetworkProxy_manager";
