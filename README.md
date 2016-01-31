@@ -24,6 +24,10 @@ pod "HaidoraNetwork"
 
 mrdaios, mrdaios@gmail.com
 
+## 致谢
+- [YTKNetwork](https://github.com/yuantiku/YTKNetwork)
+- [RTNetworking](https://github.com/casatwy/RTNetworking)
+
 ## License
 
 HaidoraNetwork is available under the MIT license. See the LICENSE file for more info.
