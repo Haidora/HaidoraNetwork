@@ -1,15 +1,14 @@
 //
-//  HDNetworkProxy+HDNetworkPrivate.m
+//  HDNetworkProxy+HDAFNetworking.m
 //  Pods
 //
-//  Created by Dailingchi on 15/10/30.
+//  Created by Dailingchi on 16/1/31.
 //
 //
 
-#import "HDNetworkProxy+HDNetworkPrivate.h"
+#import "HDNetworkProxy+HDAFNetworking.h"
 #import "HDNetworkConfig.h"
 #import "HDNetworkProxy+HDNetworkProxyUtils.h"
-
 #import <AFNetworking/AFNetworking.h>
 #import <objc/runtime.h>
 
@@ -48,7 +47,7 @@ static char *kHDNetworkProxy_manager = "kHDNetworkProxy_manager";
 
 @end
 
-@implementation HDNetworkProxy (HDNetworkPrivate)
+@implementation HDNetworkProxy (HDAFNetworking)
 
 #pragma mark
 #pragma mark Serializer
@@ -152,6 +151,11 @@ static char *kHDNetworkProxy_manager = "kHDNetworkProxy_manager";
               //          NSString.");
           }
         }];
+    if ([requeset conformsToProtocol:@protocol(HDNetworkAFNetworking)] &&
+        [requeset respondsToSelector:@selector(configureAFHTTPRequestOperationManager:)])
+    {
+        [(id<HDNetworkAFNetworking>)requeset configureAFHTTPRequestOperationManager:manager];
+    }
 }
 
 - (NSOperation *)loadRequest:

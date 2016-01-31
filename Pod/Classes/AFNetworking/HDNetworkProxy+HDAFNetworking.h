@@ -1,14 +1,26 @@
 //
-//  HDNetworkProxy+HDNetworkPrivate.h
+//  HDNetworkProxy+HDAFNetworking.h
 //  Pods
 //
-//  Created by Dailingchi on 15/10/30.
+//  Created by Dailingchi on 16/1/31.
 //
 //
 
 #import "HDNetworkProxy.h"
+#import <AFNetworking/AFNetworking.h>
 
-@interface HDNetworkProxy (HDNetworkPrivate)
+@protocol HDNetworkAFNetworking <NSObject>
+
+@optional
+
+#pragma mark
+#pragma mark Config AFNetworking
+
+- (void)configureAFHTTPRequestOperationManager:(AFHTTPRequestOperationManager *)manager;
+
+@end
+
+@interface HDNetworkProxy (HDAFNetworking)
 
 #pragma mark
 #pragma mark Serializer

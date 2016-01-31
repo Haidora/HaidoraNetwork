@@ -27,3 +27,6 @@ mrdaios, mrdaios@gmail.com
 ## License
 
 HaidoraNetwork is available under the MIT license. See the LICENSE file for more info.
+
+TODO:
+缓存，去掉重复的请求

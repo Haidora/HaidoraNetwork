@@ -8,7 +8,7 @@
 
 #import "HDNetworkProxy.h"
 #import "HDNetworkProxy+HDNetworkProxyUtils.h"
-#import "HDNetworkProxy+HDNetworkPrivate.h"
+#import "HDNetworkProxy+HDAFNetworking.h"
 
 @interface HDNetworkProxy ()
 
