@@ -69,7 +69,14 @@
     {
         detailUrl = [detailUrl stringByReplacingCharactersInRange:NSMakeRange(0, 1) withString:@""];
     }
-    return [NSString stringWithFormat:@"%@/%@", baseUrl, detailUrl];
+    if (detailUrl)
+    {
+        return [baseUrl stringByAppendingFormat:@"/%@", detailUrl];
+    }
+    else
+    {
+        return baseUrl;
+    }
 }
 
 - (HDRequestMethod)loadRequestMethodWith:(id<HDNetworkRequest>)request
